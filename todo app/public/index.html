@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/websetup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script>
+const firebaseConfig = {
+  apiKey: "AIzaSyAq0iRlqkXIEStCmbNIQVwxVqmX6Fsvcmg",
+  authDomain: "todo-app-86831.firebaseapp.com",
+  databaseURL: "https://todo-app-86831-default-rtdb.firebaseio.com",
+  projectId: "todo-app-86831",
+  storageBucket: "todo-app-86831.appspot.com",
+  messagingSenderId: "1049306304439",
+  appId: "1:1049306304439:web:afb74d7d858dc618f3e232",
+  measurementId: "G-628QK7777Y"
+};
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        firebase.analytics();
+    </script>
+
+</head>
+
+<body>
+
+    </div>
+    <h1><span class="heading">TODO</span>List</h1>
+    <div class="input_div">
+        <input type="text" class="input" placeholder="What you want to do..." id="todo-item">
+        <button class="btn" onclick="addtodo()">Add Item</button>
+        <button class="btn" onclick="delAll()">Delete All</button>
+    </div>
+
+    <div>
+        <ul id="list">
+
+        </ul>
+    </div>
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+
+
+</html> 
